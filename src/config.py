@@ -1,7 +1,5 @@
-from pathlib import Path
+import os
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-DATA_DIR = BASE_DIR / "data"
-DOCUMENTS_DIR = BASE_DIR / "documents"
-MODELS_DIR = BASE_DIR / "models"
+OPENAI_MODEL = "gpt-5.6-luna"
